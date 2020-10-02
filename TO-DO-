@@ -1,4 +1,5 @@
-2 OCt- 9:43 PM
+2 OCT- 23:34
 In Sudoku_test.c
     a)  ADD solve(), function for solving given Sudoku
     b)  ADD print(), function for printing given sudoku array from 2-D array
+    c)  ADD checkSmall() and check(), functions for checking correctness of intermediate solution of Sudoku
