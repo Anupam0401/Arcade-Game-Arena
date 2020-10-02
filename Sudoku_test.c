@@ -60,6 +60,7 @@ int checkSmall(int a[][9],int i,int j, int k)
 }
 
 
+
 int check(int a[][9],int i,int j, int k)
 {
  int i1=0,j1=0;
@@ -88,9 +89,9 @@ printf("Sudoku_created\n");
    	c=rand()%9;
    	d=(rand()%9)+1;
    	if(checkSmall(a,b,c,d)==0)
- 				continue;
+ 		continue;
  	if(check(a,b,c,d)==0)
- 				continue;
+ 		continue;
       a[b][c]=(d);
    }
    for( i = 0 ; i < n ; i++ ) {
