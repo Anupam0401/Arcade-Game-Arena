@@ -58,7 +58,10 @@ int checkSmall(int a[][9],int i,int j, int k)
  	}
  return 1;
 }
-int check(int a[][9],int i,int j, int k){
+
+
+int check(int a[][9],int i,int j, int k)
+{
  int i1=0,j1=0;
  for(;i1<9;i1++){
  	if(k==a[i1][j])
