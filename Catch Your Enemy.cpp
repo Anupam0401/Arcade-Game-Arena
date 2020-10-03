@@ -65,6 +65,7 @@ for(;;){
    else{d=0;}
     int n;
 
+
 //switch case conditions here.
 switch(d)
 {
@@ -101,5 +102,6 @@ if(x>=640 || x<=0|| y<=0 || y>=480){
 }
 }
 } 
+
 
 //Add endfunction() here.
