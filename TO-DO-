@@ -11,4 +11,7 @@ In Catch Your Enemy.cpp
     (b) Add endfunction() to terminate and display the score -DONE
     (c) Run it and spot out errors if any.
     
-    
+In GTC country
+    a)ADD country names in wrods[] string
+    b)Add letter_find function
+    c)Play the game and report if any bug found
