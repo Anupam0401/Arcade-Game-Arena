@@ -15,11 +15,12 @@ In Catch Your Enemy.cpp
 
     (c) Run it and spot out errors if any.
     
+    
 In GTC_country.cpp
     ALL DONE
     just check by playing it
     
 In TIC_TAC_TOE.cpp
     a)  ADD board(), function to create tic-tac-toe virtual board
-    b)  ADD winner(), function to check the winner conditionalities
+    b)  ADD winner(), function to check the winner conditionalities....DONE
     
