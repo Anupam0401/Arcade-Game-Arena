@@ -1,7 +1,7 @@
 2 OCt- 9:43 PM
 In Sudoku_test.c
-    a)  ADD solve(), function for solving given Sudoku
-    b)  ADD print(), function for printing given sudoku array from 2-D array
+    a)  ADD solve(), function for solving given Sudoku ....DONE
+    b)  ADD print(), function for printing given sudoku array from 2-D array ...DONE
     refer branches
     ALL DONE
     just check by playing it
@@ -9,9 +9,9 @@ In Sudoku_test.c
 In Catch Your Enemy.cpp
     (a) Add switch case condition for setting the directions.-DONE
     (b) Add endfunction() to terminate and display the score -DONE
-    (c) Run it and spot out errors if any.
+    (c) Run it and spot out errors if any.....RUNNING GOOD
     
 In GTC country
-    a)ADD country names in wrods[] string
+    a)ADD country names in wrods[] string....DONE
     b)Add letter_find function
     c)Play the game and report if any bug found
