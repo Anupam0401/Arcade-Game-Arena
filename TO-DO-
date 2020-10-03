@@ -1,4 +1,4 @@
-3 OCt- 1:36 PM
+3 OCt- 19:18 
 In Sudoku_test.c
     a)  ADD solve(), function for solving given Sudoku
     b)  ADD print(), function for printing given sudoku array from 2-D array
@@ -19,4 +19,7 @@ In GTC_country.cpp
     ALL DONE
     just check by playing it
     
+In TIC_TAC_TOE.cpp
+    a)  ADD board(), function to create tic-tac-toe virtual board
+    b)  ADD winner(), function to check the winner conditionalities
     
