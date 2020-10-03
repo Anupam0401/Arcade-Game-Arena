@@ -101,4 +101,14 @@ if(x>=640 || x<=0|| y<=0 || y>=480){
 }
 }
 }
-//Add endfunction() here.
+//Add endfunction() here. DONE
+int endfunc(int e){
+    setfillstyle(8,5);
+    e=e-2;
+    bar(0,0,640,470);
+    system("cls");
+    printf("Alas, You died outside the boundary!!!\n");
+    cout<<"Don't let this happen again!\n\n";
+    printf("Your score is : %d\n", e);
+    getch();
+}
