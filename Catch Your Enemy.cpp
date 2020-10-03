@@ -64,3 +64,5 @@ for(;;){
    else if(GetAsyncKeyState(VK_DOWN)) {d=4;}
    else{d=0;}
     int n;
+
+//Add switch case conditions here.
