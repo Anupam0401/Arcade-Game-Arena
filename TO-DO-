@@ -5,3 +5,8 @@ In Sudoku_test.c
     refer branches
     ALL DONE
     just check by playing it
+    
+In Catch Your Enemy.cpp
+    (a) Add switch case condition for setting the directions.
+    (b) Add endfunction() to terminate and display the score
+    (c) Run it and spot out errors if any.
