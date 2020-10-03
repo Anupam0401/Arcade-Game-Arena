@@ -8,5 +8,7 @@ In Sudoku_test.c
     
 In Catch Your Enemy.cpp
     (a) Add switch case condition for setting the directions.-DONE
-    (b) Add endfunction() to terminate and display the score
+    (b) Add endfunction() to terminate and display the score -DONE
     (c) Run it and spot out errors if any.
+    
+    
