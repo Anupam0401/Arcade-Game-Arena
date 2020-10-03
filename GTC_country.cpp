@@ -61,5 +61,24 @@ int main ()
 	cin.get();
 	return 0;
 }
-// ADD letter_find function() here by the name lf()
+
+//letter_find function here
+int lf (char guess, string sw, string &gw)
+{
+	int i;
+	int mt=0;
+	int len=sw.length();
+	for (i = 0; i< len; i++)
+	{
+		if (guess == gw[i])
+			return 0;
+		if (guess == sw[i])
+		{
+			gw[i] = guess;
+			mt++;
+		}
+	}
+	return mt;
+}
+
 
