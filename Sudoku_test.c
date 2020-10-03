@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<time.h>
 
+void print(int a[][9]);
 
 int Sudoku_pass(int a[][9], int b[][9]){
 int i,j,k=0,flag=0;
@@ -85,6 +86,25 @@ void playsudoku(int a[][9], int b[][9]){
 	if(Sudoku_pass(a,b)==0)
 		playsudoku(a,b);
 }
+
+void print(int a[][9]){
+ int i,j;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		printf("%2d ",a[i][j]%10);
+ 		if((j+1)%3==0)
+ 		printf("|");
+ 		}
+ 	if((i+1)%3==0){
+ 		printf("\n");
+ 		for(j=0;j<15;j++)
+ 			printf("_ ");
+ 		printf("\n");
+ 		}
+ 	printf("\n");
+ }
+}
+
 int main() {
  int n,i,j,num,k,a[9][9]={0},b[9][9];
  printf("Enter \n1 for Beginner Level \nor\n 2 for Intermediate level\nor\n 3 for Advanced Level\n");
