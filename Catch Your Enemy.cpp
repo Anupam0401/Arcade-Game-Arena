@@ -65,6 +65,41 @@ for(;;){
    else{d=0;}
     int n;
 
-//Add switch case conditions here.
- 
+//switch case conditions here.
+switch(d)
+{
+    case 0:
+      if(dir==1){x=x+10;}
+      else if(dir==2){x=x-10;}
+      else if(dir==3){ y=y-10;}
+      else if(dir==4) {y=y+10;}
+      else{d=0;}
+        break;
+    case 1:
+           x=x+10;
+           dir=1;
+           break;
+    case 2:
+         x= x-10;
+         dir=2;
+          break;
+    case 3:
+        dir=3;
+        y=y-10;
+        break;
+    case 4:
+        dir=4;
+       y= y+10;
+        break;
+    }
+bar(x,y,x+10,y+10);
+delay(100);
+printf("%d     %d    %d   %d   \n",x,y,rx,ry);
+if(x>=640 || x<=0|| y<=0 || y>=480){
+    endfunc(f);
+    break;
+}
+}
+} 
+
 //Add endfunction() here.
