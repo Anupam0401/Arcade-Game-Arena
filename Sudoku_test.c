@@ -75,6 +75,34 @@ int check(int a[][9],int i,int j, int k)
  return 1;
 }
 
+int solve(int a[][9])
+{
+ int i,j,k;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		if(i==8&&j==8&&a[i][j]!=0){
+ 			return 1;
+ 			print(a);
+ 		}
+ 		if(a[i][j]!=0)
+ 			continue;
+ 		for(k=1;k<=10;k++){
+ 			if(k==10)
+ 				{a[i][j]=0;
+ 				 return -1;
+ 				}
+ 			if(checkSmall(a,i,j,k)==0)
+ 				continue;
+ 			if(check(a,i,j,k)==0)
+ 				continue;
+ 			a[i][j]=k;
+ 			if(solve(a)==1)
+ 				return 1;
+ 			}
+ 		}
+ 	}
+ return 2;
+}
 
 void sudoku(int a[][9],int n)
 {
