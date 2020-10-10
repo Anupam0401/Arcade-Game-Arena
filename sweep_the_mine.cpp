@@ -95,6 +95,46 @@ bool play_SMUtil(char mBoard[][MAXSIDE], char rBoard[][MAXSIDE],int mines[][2], 
         printf ("\nYou lost!\n"); 
         return (true) ; 
     }
+   else
+     {  int count = countAdjacentMines(row, col, mines, rBoard); 
+        (*movesLeft)--; 
+        mBoard[row][col] = count + '0'; 
+        if (!count) 
+        {   if (isValid (row-1, col) == true) 
+            { if (isMine (row-1, col, rBoard) == false) 
+                   play_SMUtil(mBoard, rBoard, mines, row-1, col, movesLeft); 
+            } 
+            if (isValid (row+1, col) == true) 
+            { if (isMine (row+1, col, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row+1, col, movesLeft); 
+            } 
+            if (isValid (row, col+1) == true) 
+            { if (isMine (row, col+1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row, col+1, movesLeft); 
+            } 
+            if (isValid (row, col-1) == true) 
+            {  if (isMine (row, col-1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row, col-1, movesLeft); 
+            } 
+            if(isValid (row-1, col+1) == true) 
+            {  if (isMine (row-1, col+1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row-1, col+1, movesLeft); 
+            } 
+            if (isValid (row-1, col-1) == true) 
+            {   if (isMine (row-1, col-1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row-1, col-1, movesLeft); 
+            } 
+            if (isValid (row+1, col+1) == true) 
+            {  if (isMine (row+1, col+1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row+1, col+1, movesLeft); 
+            } 
+            if (isValid (row+1, col-1) == true) 
+            {  if (isMine (row+1, col-1, rBoard) == false) 
+                    play_SMUtil(mBoard, rBoard, mines, row+1, col-1, movesLeft); 
+            } 
+        } 
+        return (false); 
+    } 
 }
 void placeMines(int mines[][2], char rBoard[][MAXSIDE]) 
 {  bool mark[MAXSIDE*MAXSIDE]; 
