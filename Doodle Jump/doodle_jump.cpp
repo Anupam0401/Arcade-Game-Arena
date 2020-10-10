@@ -154,6 +154,19 @@ int main()
 	// Game Over
   
   //add Game Over: here
+	gameover:
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+		window.draw(gameoverBackground);
+		window.draw(gameoverText);
+		
+	}
   
     return 0;
 }
