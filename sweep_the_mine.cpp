@@ -83,6 +83,22 @@ int countAdjacentMines(int row, int col, int mines[][2],
     return (count); 
 } 
 //  Function to be retyped for error
+void placeMines(int mines[][2], char rBoard[][MAXSIDE]) 
+{  bool mark[MAXSIDE*MAXSIDE]; 
+    memset (mark, false, sizeof (mark));  
+    for (int i=0; i<MINES; ) 
+     {  int random = rand() % (SIDE*SIDE); 
+        int y = random % SIDE; 
+        int x = random / SIDE; 
+        if (mark[random] == false) 
+        {   mines[i][1] = y; 
+             mines[i][0]= x; 
+            rBoard[mines[i][0]][mines[i][1]] = '*'; 
+            mark[random] = true; 
+            i++; 
+        } 
+    } 
+} 
 //Function for intiallising
 void C_SM (char rBoard[][MAXSIDE]) 
 {  printf ("The mines locations are-\n"); 
