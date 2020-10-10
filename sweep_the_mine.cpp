@@ -83,7 +83,29 @@ int countAdjacentMines(int row, int col, int mines[][2],
     return (count); 
 } 
 //  Function to be retyped for error
-
+void play_SM () 
+{ 
+    int movesLeft = SIDE * SIDE - MINES, x, y; 
+    int mines[MAXMINES][2]; 
+    int currentMoveIndex = 0; 
+    char rBoard[MAXSIDE][MAXSIDE], mBoard[MAXSIDE][MAXSIDE];
+    bool gameOver=false; 
+    initialise (rBoard, mBoard); 
+    placeMines (mines, rBoard); 
+    while(gameOver == false) 
+     { printf ("Current Status of Board : \n"); 
+        printBoard (mBoard); 
+        makeMove (&x, &y); 
+        if (currentMoveIndex == 0) 
+        {if (isMine (x, y, rBoard) == true) 
+            replaceMine (x, y, rBoard);  } 
+        currentMoveIndex ++; 
+        gameOver = play_SMUtil (mBoard, rBoard, mines, x, y, &movesLeft); 
+        if ((gameOver == false) && (movesLeft == 0)) 
+         {  printf ("\nYou won !\n"); 
+            gameOver = true; } 
+    } 
+} 
 // Choose_DL function
 int main() 
 { printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
