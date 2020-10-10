@@ -83,6 +83,24 @@ int countAdjacentMines(int row, int col, int mines[][2],
     return (count); 
 } 
 //  Function to be retyped for error
+//Function for intiallising
+void C_SM (char rBoard[][MAXSIDE]) 
+{  printf ("The mines locations are-\n"); 
+    printBoard (rBoard); 
+    return; 
+} 
+void replaceMine (int row, int col, char board[][MAXSIDE]) 
+{int i,j;  
+for (i=0; i<SIDE; i++) 
+    {   for (j=0; j<SIDE; j++) 
+            {   if (board[i][j] != '*') 
+                {   board[i][j] = '*'; 
+                    board[row][col] = '-'; 
+                    return; 
+                } 
+            } 
+    } 
+} 
 void play_SM () 
 { 
     int movesLeft = SIDE * SIDE - MINES, x, y; 
