@@ -28,14 +28,16 @@ In TIC_TAC_TOE.cpp
     ready to be played.
     
 In Sweep_the_mine.cpp
-    a)Add function for choosing difficulty
+    a)Add function for choosing difficulty-DONE
     b)Add utility for printing board
-    c)Add initialise function for intialising the mines
+    c)Add initialise function for intialising the mines-DONE
 
     
 In sweep the mine.cpp
-    (a) ADD #define variables
-    (b) ADD initialise() function
-    (c) ADD choose_DL() function
+    (a) ADD #define variables-DONE
+    (b) ADD initialise() function-DONE
+    (c) ADD choose_DL() function-DONE
     (d) Check for errors
     
+    ALL DONE.
+    just check for (d)..
