@@ -23,3 +23,9 @@ In TIC_TAC_TOE.cpp
     a)  ADD board(), function to create tic-tac-toe virtual board
     b)  ADD winner(), function to check the winner conditionalities....DONE
     
+In sweep the mine.cpp
+    (a) ADD #define variables
+    (b) ADD initialise() function
+    (c) ADD choose_DL() function
+    (d) Check for errors
+    
