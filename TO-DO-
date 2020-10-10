@@ -11,9 +11,9 @@ In Catch Your Enemy.cpp
 
     (b) Add endfunction() to terminate and display the score -DONE
 
-    (b) Add endfunction() to endfunc() branch ,to terminate and display the score
-
-    (c) Run it and spot out errors if any.
+    (b) Add endfunction() to endfunc() branch ,to terminate and display the scoreDOONE
+    All done . Good to go.
+    
     
 In GTC_country.cpp
     ALL DONE
@@ -21,6 +21,15 @@ In GTC_country.cpp
     
 In TIC_TAC_TOE.cpp
     a)  ADD board(), function to create tic-tac-toe virtual board
+
     b)  ADD winner(), function to check the winner conditionalities
     
+
+    b)  ADD winner(), function to check the winner conditionalities....DONE
+    
+In Sweep_the_mine.cpp
+    a)Add function for choosing difficulty
+    b)Add utility for printing board
+    c)Add initialise function for intialising the mines
+
     
