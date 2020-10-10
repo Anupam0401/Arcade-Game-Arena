@@ -30,6 +30,6 @@ In Sweep_the_mine.cpp
    
  In Doodle_jump.cpp
     (a) Add delay()
-    (b) Add gameover:
+    (b) Add gameover:   (DONE)
     (c) Check for errors 
     P.S. - This is a SFML project so, your compiler must have this installed to run this program else, use Online Compiler.
