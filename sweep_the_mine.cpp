@@ -83,6 +83,19 @@ int countAdjacentMines(int row, int col, int mines[][2],
     return (count); 
 } 
 //  Function to be retyped for error
+bool play_SMUtil(char mBoard[][MAXSIDE], char rBoard[][MAXSIDE],int mines[][2], int row, int col, int *movesLeft) 
+{  if (mBoard[row][col] != '-') 
+        return (false); 
+    int i, j; 
+    if (rBoard[row][col] == '*') 
+    {  mBoard[row][col]='*'; 
+   for (i=0; i<MINES; i++) 
+            mBoard[mines[i][0]][mines[i][1]]='*'; 
+        printBoard (mBoard); 
+        printf ("\nYou lost!\n"); 
+        return (true) ; 
+    }
+}
 void placeMines(int mines[][2], char rBoard[][MAXSIDE]) 
 {  bool mark[MAXSIDE*MAXSIDE]; 
     memset (mark, false, sizeof (mark));  
