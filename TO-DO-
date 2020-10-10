@@ -20,16 +20,30 @@ In GTC_country.cpp
     just check by playing it
     
 In TIC_TAC_TOE.cpp
-    a)  ADD board(), function to create tic-tac-toe virtual board
+    a)  ADD board(), function to create tic-tac-toe virtual board...DONE
+    
+
     b)  ADD winner(), function to check the winner conditionalities....DONE
+    ALL DONE.
+    ready to be played.
     
 In Sweep_the_mine.cpp
-    a)Add function for choosing difficulty
-    b)Add utility for printing board
-    c)Add initialise function for intialising the mines
+    a)Add function for choosing difficulty-DONE
+    b)Add utility for printing board-DONE
+    c)Add initialise function for intialising the mines-DONE
    
  In Doodle_jump.cpp
-    (a) Add delay()
+    (a) Add delay() -DONE
     (b) Add gameover:   (DONE)
     (c) Check for errors 
     P.S. - This is a SFML project so, your compiler must have this installed to run this program else, use Online Compiler.
+
+    
+In sweep the mine.cpp
+    (a) ADD #define variables-DONE
+    (b) ADD initialise() function-DONE
+    (c) ADD choose_DL() function-DONE
+    (d) Check for errors
+    
+    ALL DONE.
+    just check for (d)..

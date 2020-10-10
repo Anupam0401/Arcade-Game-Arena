@@ -22,7 +22,11 @@ int main()
         player=(player%2)?1:2;
 
         cout << "Player " << player << ", enter a number:  ";
+
+        cin >> choice;                                                  // to choose the gird by respective player 1 & 2
+
         cin >> choice;                                                  // to choose the grid by respective player 1 & 2
+
 
         mark=(player == 1) ? 'X' : 'O';
 
@@ -83,7 +87,6 @@ int main()
     -1 FOR GAME IS IN PROGRESS
     O GAME IS OVER AND NO RESULT */
 
-
 //added winner() func here
 int winner()
 {
@@ -123,8 +126,30 @@ int winner()
 
 //FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
 
+void board()
+{
+    system("cls");
+    cout << "\n\n\tTic Tac Toe\n\n";
+
+    cout << "Player 1 (X)  -  Player 2 (O)" << endl << endl;
+    cout << endl;
+
+    cout << "     |     |     " << endl;
+    cout << "  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl;
+
+    cout << "__|_|__" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << square[4] << "  |  " << square[5] << "  |  " << square[6] << endl;
+
+    cout << "__|_|__" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << square[7] << "  |  " << square[8] << "  |  " << square[9] << endl;
+
+    cout << "     |     |     " << endl << endl;
+}
 
 
 
-//add board() func here
 
