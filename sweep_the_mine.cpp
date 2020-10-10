@@ -1,4 +1,11 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
+#define BEGINNER 0 
+#define INTERMEDIATE 1 
+#define ADVANCED 2 
+#define MAXSIDE 25 
+#define MAXMINES 99 
+#define MOVESIZE 526
+
 using namespace std; 
 int SIDE ; 
 int MINES ; 
@@ -151,8 +158,20 @@ void placeMines(int mines[][2], char rBoard[][MAXSIDE])
             i++; 
         } 
     } 
-} 
-//Function for intiallising
+}
+
+void initialise(char rBoard[][MAXSIDE], char mBoard[][MAXSIDE]) 
+{ 
+    srand(time (NULL)); 
+    for (int i=0; i<SIDE; i++) 
+    { 
+        for (int j=0; j<SIDE; j++) 
+        { 
+            mBoard[i][j] = rBoard[i][j] = '-'; 
+        } 
+    } 
+    return; 
+}
 void C_SM (char rBoard[][MAXSIDE]) 
 {  printf ("The mines locations are-\n"); 
     printBoard (rBoard); 
@@ -170,6 +189,7 @@ for (i=0; i<SIDE; i++)
             } 
     } 
 } 
+
 void play_SM () 
 { 
     int movesLeft = SIDE * SIDE - MINES, x, y; 
@@ -193,7 +213,34 @@ void play_SM ()
             gameOver = true; } 
     } 
 } 
-// Choose_DL function
+
+void choose_DL () 
+{ 
+    int level; 
+    printf ("Enter the Difficulty Level\n"); 
+    printf ("Press 0 for BEGINNER \n"); 
+    printf ("Press 1 for INTERMEDIATE \n"); 
+    printf ("Press 2 for ADVANCED\n"); 
+    scanf ("%d", &level); 
+    if (level == BEGINNER) 
+    { 
+        SIDE = 9; 
+        MINES = 10; 
+    } 
+    if (level == INTERMEDIATE) 
+    { 
+        SIDE = 16; 
+        MINES = 40; 
+    }
+    if (level == ADVANCED) 
+    { 
+        SIDE = 24; 
+        MINES = 99; 
+    } 
+    return; 
+}
+
+
 int main() 
 { printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
     choose_DL (); 
