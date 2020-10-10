@@ -22,7 +22,11 @@ int main()
         player=(player%2)?1:2;
 
         cout << "Player " << player << ", enter a number:  ";
+
+        cin >> choice;                                                  // to choose the gird by respective player 1 & 2
+
         cin >> choice;                                                  // to choose the grid by respective player 1 & 2
+
 
         mark=(player == 1) ? 'X' : 'O';
 
@@ -82,7 +86,6 @@ int main()
     1 FOR GAME IS OVER WITH RESULT
     -1 FOR GAME IS IN PROGRESS
     O GAME IS OVER AND NO RESULT */
-
 
 //added winner() func here
 int winner()
