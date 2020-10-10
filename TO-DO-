@@ -29,8 +29,14 @@ In TIC_TAC_TOE.cpp
     
 In Sweep_the_mine.cpp
     a)Add function for choosing difficulty-DONE
-    b)Add utility for printing board
+    b)Add utility for printing board-DONE
     c)Add initialise function for intialising the mines-DONE
+   
+ In Doodle_jump.cpp
+    (a) Add delay() -DONE
+    (b) Add gameover:   (DONE)
+    (c) Check for errors 
+    P.S. - This is a SFML project so, your compiler must have this installed to run this program else, use Online Compiler.
 
     
 In sweep the mine.cpp
