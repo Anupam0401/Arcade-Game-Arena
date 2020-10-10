@@ -165,6 +165,8 @@ int main()
 		}
 		window.draw(gameoverBackground);
 		window.draw(gameoverText);
+		window.draw(scoreText);
+		window.display();
 		
 	}
   
