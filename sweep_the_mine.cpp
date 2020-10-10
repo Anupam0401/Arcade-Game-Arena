@@ -20,7 +20,22 @@ void makeMove(int *x, int *y)
     scanf("%d %d", x, y); 
     return; 
 } 
-//printboard function
+
+void printBoard(char mBoard[][MAXSIDE]) 
+{  int i, j; 
+    printf ("    "); 
+    for (i=0; i<SIDE; i++) 
+        printf ("%d ", i); 
+    printf ("\n\n"); 
+    for (i=0; i<SIDE; i++) 
+    {     printf ("%d   ", i); 
+        for (j=0; j<SIDE; j++) 
+            printf ("%c ", mBoard[i][j]); 
+        printf ("\n"); 
+    } 
+    return; 
+}
+
 int countAdjacentMines(int row, int col, int mines[][2],  
                       char rBoard[][MAXSIDE]) 
 {   int i; 
