@@ -20,12 +20,12 @@ In GTC_country.cpp
     just check by playing it
     
 In TIC_TAC_TOE.cpp
-    a)  ADD board(), function to create tic-tac-toe virtual board
-
-    b)  ADD winner(), function to check the winner conditionalities
+    a)  ADD board(), function to create tic-tac-toe virtual board...DONE
     
 
     b)  ADD winner(), function to check the winner conditionalities....DONE
+    ALL DONE.
+    ready to be played.
     
 In Sweep_the_mine.cpp
     a)Add function for choosing difficulty
