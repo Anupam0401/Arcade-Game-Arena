@@ -224,6 +224,18 @@ void playsudoku(int a[][9], int b[][9])
 int SUDOKU()
 {
  int n,i,j,num,k,a[9][9]={0},b[9][9];
+printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the SUDOKU game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Sudoku Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::Fill each and every box with number in between 1 to 9:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Replace each 0 in matrix with another number ::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Input should be like row number( space) column number (space) NUMBER (to input) ::::::::::::::::::::::::\n");
+    delay(1500);
  printf("Enter \n1 for Beginner Level \nor\n 2 for Intermediate level\nor\n 3 for Advanced Level\n");
  scanf("%d",&n);
 /* for(k=0;k<n;k++){scanf("%d %d",&i,&j);scanf("%d",&a[i-1][j-1]);}*/
@@ -477,6 +489,15 @@ void choose_DL ()
 
 int SWEEPTHEMINE()
 { printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
+ printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the Sweep The Mine game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Minesweeper type Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::choose a box, and it would show the value behind it, if its a mine you loose:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Input should be row number(space) column number ::::::::::::::::::::::::::::::::\n");
     choose_DL ();
     play_SM ();
     return (0);
@@ -498,7 +519,21 @@ int  GTC()
   word[i] = tolower(word[i]);
 
 	string unknown(word.length(),'*');
-	cout << "\n\nWelcome to GTC...\nGUESS THE COUNTRY\n ";
+	printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to GUESS THE COUNTRYgame    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Guessing Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::You have to Guess the name of Country:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::Each letter is represented by a *.:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::You have to type only one letter in one try ::::::::::::::::::::::::::::::::\n");
+	 delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::If your guess is correct * will get replaced by your Guessed letter.:::::::::::::::::::::::::::::::::::\n");
+ delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::Else if your guess is wrong, your guess count will be decreased.:::::::::::::::::::::::::::::::::::\n");
 	cout << "\n\nEach letter is represented by a *.";
 	cout << "\n\nYou have to type only one letter in one try, only if guess is wrong your guess count will decrease ";
 	 maxt=6;
