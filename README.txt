@@ -2,6 +2,7 @@
 This is the Git project for the course STNT-II(CS200) of the group "Technomakers".
 This is Game_pack consisting of many games inside one file to play for refreshment.
 
+
 --GoTo Arcade Games folder>>MAIN.CPP
 -run the program file main.cpp
 
@@ -9,7 +10,7 @@ This is Game_pack consisting of many games inside one file to play for refreshme
 IN THE PROGRAM-
 In the console, you are given 7 choices of games to be played.
 
-You have to press
+You have to press,
 1 for Catch your enemy
 2 for Escape the maze
 3 for Tic-tac-toe
@@ -17,6 +18,7 @@ You have to press
 5 for sudoku
 6 for GTC
 7 for Jumping Jack
-to play, Enter any other number to exit.
+to play, Enter any other number to exit the menu.
 
-select game of you choice and ENJOY!!
+Instructions are given inside the respective games.
+Select game of your choice and ENJOY!!
