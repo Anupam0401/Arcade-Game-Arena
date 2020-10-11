@@ -539,23 +539,23 @@ int lf (char guess, string sw, string &gw)
 
 void Jumping_Jack()
 {
-    printf("\n :::::::::::::::::::::::::::::::::::::::    WELCOME to the JUMPING JACK game    :::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the JUMPING JACK game    :::::::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-    printf("\n -- The doodle is trapped somewhere to the south of the EARTH and is trying to jumping the platforms to reach the Earth --\n");
+    printf("\n -- The doodle is trapped somewhere to the south of the EARTH and is jumping the platforms to reach the Earth --\n");
     delay(5000);
-    printf("\n:::::::::::::::::::  Help Doodle escape this deadly trap and escort him to EARTH by making correct moves  :::::::::::::::::\n");
+    printf("\n:::::::::::::  Help Doodle escape this deadly trap and escort him to EARTH by making correct moves  ::::::::::::\n\n\n");
     delay(4000);
-    printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-    printf("\n *************************************   Use arrow keys to move left or right   *******************************************\n");
+    printf("\n ********************************   Use arrow keys to move left or right   **************************************\n");
     delay(2000);
-    printf("\n *************************   The DOODLE jumps automatically after hitting the green platform   *****************************\n");
-    delay(3000);**
-    printf("\n ***********************    Keep on jumping over the platforms to gain heights and score points    *************************\n");
+    printf("\n *******************   The DOODLE jumps automatically after hitting the green platform   ************************\n");
+    delay(3000);
+    printf("\n ********************    Keep on jumping over the platforms to gain heights and score points    *****************\n");
     delay(5000);
-    printf("\n XXXXXXXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXXXXXXXX\n");
+    printf("\n XXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXX\n\n\n");
     delay(5000);
-    printf("\n********************************************   GET READY.......LET'S BEGIN :)   *******************************************");
+    printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
     delay(2000);
     printf("\n");
 
