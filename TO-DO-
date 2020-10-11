@@ -1,4 +1,4 @@
-3 OCt- 19:18 
+11 OCt- 00:35 
 In Sudoku_test.c
     a)  ADD solve(), function for solving given Sudoku
     b)  ADD print(), function for printing given sudoku array from 2-D array
@@ -47,3 +47,11 @@ In sweep the mine.cpp
     
     ALL DONE.
     just check for (d)..
+    
+ In the escape_the_maze.cpp
+     (a) add struct for the player(character).....DONE
+     (b) add struct for the enemies ....DONE
+     (c) add function for when the player hits an enemy -DONE
+     (d) error check
+     
+     ALL DONE
