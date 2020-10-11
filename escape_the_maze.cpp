@@ -12,7 +12,7 @@ using namespace std;
  // struct for the enemies here    
 struct enemies{
  
-}
+};
 
 
 // function for when the player hits an enemy here
