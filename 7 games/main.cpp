@@ -878,36 +878,7 @@ int endfunc(int e){
 /*-------------------------------------------------------------------------------------------------------------------*/
 
 
-//driver function
-int main()
-{
-    int choice;
-    cout<<"\nPress 1 for Catch your enemy\n\n";
-    cout<<"Press 2 for Escape the maze\n\n";
-    cout<<"Press 3 for Tic-tac-toe\n\n";
-    cout<<"Press 4 for sweep the mine\n\n";
-    cout<<"Press 5 for sudoku\n\n";
-    cout<<"Press 6 for GTC\n\n";
-    cout<<"Press 7 for Jumping Jack\n\n";
-    cout<<"\nEnter your choice\n\n";
-    cin>>choice;
-    if(choice==1)
-        catch_your_enemy();
-    else if(choice==2)
-        escape_the_maze();
-    else if(choice==3)
-        tic_tac_toe();
-    else if(choice==4)
-        SWEEPTHEMINE();
-    else if(choice==5)
-        SUDOKU();
-    else if(choice==6)
-        GTC();
-    else if(choice==7)
-        Jumping_Jack();
-    else
-        return 0;
-}
+
 
 /*------------------------------------------------------------------------------------------------*/
 
@@ -1307,3 +1278,37 @@ void player_hit()
         player.posY =1;
         player.hp --;
     }
+//driver function
+int main()
+{
+    int choice;
+    cout<<"\nPress 1 for Catch your enemy\n\n";
+    cout<<"Press 2 for Escape the maze\n\n";
+    cout<<"Press 3 for Tic-tac-toe\n\n";
+    cout<<"Press 4 for sweep the mine\n\n";
+    cout<<"Press 5 for sudoku\n\n";
+    cout<<"Press 6 for GTC\n\n";
+    cout<<"Press 7 for Jumping Jack\n\n";
+    cout<<"\nEnter your choice\n\n";
+while(1){
+    cin>>choice;
+	if(choice==0)
+        break;
+    else if(choice==1)
+        catch_your_enemy();
+    else if(choice==2)
+        escape_the_maze();
+    else if(choice==3)
+        tic_tac_toe();
+    else if(choice==4)
+        SWEEPTHEMINE();
+    else if(choice==5)
+        SUDOKU();
+    else if(choice==6)
+        GTC();
+    else if(choice==7)
+        Jumping_Jack();
+}
+    
+        return 0;
+}
