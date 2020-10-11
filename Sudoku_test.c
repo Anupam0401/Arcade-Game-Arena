@@ -1,5 +1,6 @@
 //Completed
 //read to-do 
+#include<iostream.h>
 #include <cstdio>
 #include<cstdlib>
 #include<ctime>
