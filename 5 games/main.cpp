@@ -17,6 +17,7 @@
 #define MAXSIDE 25
 #define MAXMINES 99
 #define MOVESIZE 526
+
 using namespace std;
 int endfunc(int e);
 
@@ -536,25 +537,25 @@ int lf (char guess, string sw, string &gw)
     while (clock() < start_time + milli_seconds);
 }*/
 
-void Doodle_Jump()
+void Jumping_Jack()
 {
-    printf("\n ::::::::::::::::::::::::::::::::::WELCOME to the DOODLE JUMP game::::::::::::::::::::::::::::::::::\n");
+    printf("\n :::::::::::::::::::::::::::::::::::::::    WELCOME to the JUMPING JACK game    :::::::::::::::::::::::::::::::::::::::::::\n");
     delay(3000);
-    printf("\n The doodle is trapped somewhere to the south of the EARTH and is trying to jumping the platforms to reach the Earth\n");
+    printf("\n -- The doodle is trapped somewhere to the south of the EARTH and is trying to jumping the platforms to reach the Earth --\n");
     delay(5000);
-    printf("\n::::::::::Help Doodle escape this deadly trap and escort him to EARTH by making correct moves::::::::\n");
+    printf("\n:::::::::::::::::::  Help Doodle escape this deadly trap and escort him to EARTH by making correct moves  :::::::::::::::::\n");
     delay(4000);
-    printf("\n::::::::::::::::::::::::::::::::::::::::::::INSTRUCTIONS::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\n:::::::::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-    printf("\n ****************************Use arrow keys to move left or right***********************************\n");
+    printf("\n *************************************   Use arrow keys to move left or right   *******************************************\n");
     delay(2000);
-    printf("\n *****************The DOODLE jumps automatically after hitting the green platform*******************\n");
-    delay(3000);
-    printf("\n **************Keep on jumping over the platforms to gain heights and score points******************\n");
+    printf("\n *************************   The DOODLE jumps automatically after hitting the green platform   *****************************\n");
+    delay(3000);**
+    printf("\n ***********************    Keep on jumping over the platforms to gain heights and score points    *************************\n");
     delay(5000);
-    printf("\n ***WARNING : Don't miss a platform else you fall into the infinite space and get trapped there.****\n");
+    printf("\n XXXXXXXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXXXXXXXX\n");
     delay(5000);
-    printf("\n*************************************GET READY.......LET'S BEGIN*************************************");
+    printf("\n********************************************   GET READY.......LET'S BEGIN :)   *******************************************");
     delay(2000);
     printf("\n");
 
@@ -806,7 +807,7 @@ int main()
 {
     int choice;
     cout<<"\nPress 1 for Catch your enemy\n\n";
-    cout<<"Press 2 for Doodle Jump\n\n";
+    cout<<"Press 2 for Jumping Jack\n\n";
     cout<<"Press 3 for GTC\n\n";
     cout<<"Press 4 for sweep the mine\n\n";
     cout<<"Press 5 for sudoku\n\n";
@@ -815,7 +816,7 @@ int main()
     if(choice==1)
         catch_your_enemy();
     else if(choice==2)
-        Doodle_Jump();
+        Jumping_Jack();
     else if(choice==3)
         GTC();
     else if(choice==4)
