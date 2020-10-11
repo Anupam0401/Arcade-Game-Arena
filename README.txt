@@ -16,3 +16,5 @@ In the console, you are given 7 choices of games to be played.
 5 for sudoku
 6 for GTC
 7 for Jumping Jack
+
+select game of you choice and ENJOY!!
