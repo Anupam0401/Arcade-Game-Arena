@@ -16,10 +16,13 @@ struct character
 
 
 
- // struct for the enemies here    
-struct enemies{
- 
-}
+ struct enemies                              
+
+    {
+        int posX;
+        int posY;
+        char enemy_symbol;
+    };
 
 
 // function for when the player hits an enemy here
