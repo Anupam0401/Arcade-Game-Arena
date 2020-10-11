@@ -234,7 +234,7 @@ printf("\n::::::::::::::::::::::::::::::::Fill each and every box with number in
     delay(1500);
 printf("\n:::::::::::::::::::::::::::::::Replace each 0 in matrix with another number ::::::::::::::::::::::::::::::::\n");
     delay(1500);
-printf("\n:::::::::::::::::::::::::::::::Input should be like row number( space) column number (space) NUMBER (to input) ::::::::::::::::::::::::\n");
+printf("\n::::::::::::: Input should be like row number( space) column number (space) NUMBER to insert(to input) :::::::::::\n");
     delay(1500);
  printf("Enter \n1 for Beginner Level \nor\n 2 for Intermediate level\nor\n 3 for Advanced Level\n");
  scanf("%d",&n);
@@ -490,13 +490,13 @@ void choose_DL ()
 int SWEEPTHEMINE()
 {// printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
 	printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
- printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the Sweep The Mine game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+ printf("\n :::::::::::::::::::::::::    WELCOME to the Sweep The Mine game    ::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-printf("\n ::::::::::::::::::::::::::::::::::    It is classic Minesweeper type Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+printf("\n ::::::::::::::::::::::::::::::    It is classic Minesweeper type Game   ::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
 printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-printf("\n::::::::::::::::::::::::::::::::choose a box, and it would show the value behind it, if its a mine you loose:::::::::::::::::::::::::::::::::::\n");
+printf("\n::::::::::::::::::::choose a box, and it would show the value behind it, if its a mine you loose::::::::::::::::::\n");
     delay(1500);
 printf("\n:::::::::::::::::::::::::::::::Input should be row number(space) column number ::::::::::::::::::::::::::::::::\n");
     choose_DL ();
@@ -519,11 +519,12 @@ int  GTC()
 	for(i = 0; i <=word.length(); i++)
   word[i] = tolower(word[i]);
 
-	string unknown(word.length(),'*');printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to GUESS THE COUNTRYgame    :::::::::::::::::::::::::::::::::::::\n\n\n");
+	string unknown(word.length(),'*');
+	printf("\n ::::::::::::::::::::::::::    WELCOME to GUESS THE COUNTRY  game    ::::::::::::::::::::::::\n\n\n");
     delay(3000);
-printf("\n ::::::::::::::::::::::::::::::::::    It is classic Guessing Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+printf("\n :::::::::::::::::::::::::::::::    It is classic Guessing Game   :::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+printf("\n:::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  :::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
 printf("\n::::::::::::::::::::::::::::::::You have to Guess the name of Country:::::::::::::::::::::::::::::::::::\n");
     delay(1500);
@@ -531,9 +532,9 @@ printf("\n::::::::::::::::::::::::::::::::You have to Guess the name of Country:
     delay(1500);
 printf("\n:::::::::::::::::::::::::::::::You have to type only one letter in one try ::::::::::::::::::::::::::::::::\n");
 	 delay(1500);
-	printf("\n::::::::::::::::::::::::::::::::If your guess is correct * will get replaced by your Guessed letter.:::::::::::::::::::::::::::::::::::\n");
+	printf("\n:::::::::::::::::If your guess is correct * will get replaced by your Guessed letter.::::::::::::::::\n");
  delay(1500);
-	printf("\n::::::::::::::::::::::::::::::::Else if your guess is wrong, your guess count will be decreased.:::::::::::::::::::::::::::::::::::\n");
+	printf("\n:::::::::::::::Else if your guess is wrong, your guess count will be decreased.:::::::::::::::::::\n");
 	cout << "\n\nEach letter is represented by a *.";
 	cout << "\n\nYou have to type only one letter in one try, only if guess is wrong your guess count will decrease ";
 	 maxt=6;
@@ -771,15 +772,16 @@ gameover:
 }
 
 void catch_your_enemy(){
-    cout<<"\n\t Welcome to the 'CATCH  YOUR  ENEMY' Game\n";
+    cout<<"\n ::::::::::::::::::::::::: Welcome to the 'CATCH  YOUR  ENEMY' Game ::::::::::::::::::::::::::::::::::\n";
     delay(3000);
-    cout<<"\n\tUse arrow keys to move yourself and reach your enemy who has cloned you\n ";
+    cout<<"\n::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::\n";
+    cout<<"\n:::::::::::::::: Use arrow keys to move yourself and reach your enemy who has cloned you::::::::::::::\n ";
     delay(4000);
-    cout<<"\n\tBut as soon as you catch him he disappears and spawns at a different location , so go after him\n";
+    cout<<"\n\t***But as soon as you catch him he disappears and spawns at a different location , so go after him ***\n";
     delay(5000);
-    cout<<"\n   Alert : Your Enemy has planted bombs outside the yellow boundary so, stay inside the boundary and catch your enemy.\n";
+    cout<<"\nXX Alert : Your Enemy has planted bombs outside the yellow boundary so, stay inside the boundary and catch your enemy. XXX\n";
     delay(6000);
-    cout<<"\n\tSO, LET'S BEGIN!!";
+    cout<<"\n-------------------------   ------ ---- SO, LET'S BEGIN!! ---- ------- ---------------------------------\n\n";
     delay(1000);
     int gd,gm,rx=200,ry=200,x,y,d/*dirction*/,f=1/*Food eaten*/,dir=1/*direction*/;
    // srand(time(NULL));
@@ -881,21 +883,21 @@ void tic_tac_toe()
 {
     printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the TIC-TAC-TOE game    :::::::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-    printf("\n --------------------------------------THIS GAME REQUIRES TWO PLAYERS ------------------------------------------------\n");
+    printf("\n -------------------------------------- THIS GAME REQUIRES TWO PLAYERS -----------------------------------------\n");
     delay(5000);
-    printf("\n::::::::::::::::::::::::::::::::::::::::player 1 (X) V/S player 2 (O)::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\n:::::::::::::::::::::::::::::::::::::::: player 1 (X) V/S player 2 (O)::::::::::::::::::::::::::::::::::::::::::\n\n\n");
     delay(4000);
     printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-    printf("\n ***************************Use grid numbers 1 to 9 for selecting the respective grid**************************************\n");
+    printf("\n *************************** Use grid numbers 1 to 9 for selecting the respective grid***************************\n");
     delay(2000);
     printf("\n ************************** The game is played on a grid that's 3 squares by 3 squares ***************************\n");
     delay(3000);
-    printf("\n **************You are X, your friend is O. Players take turns putting their marks in empty squares**********************\n");
+    printf("\n ************** You are X, your friend is O. Players take turns putting their marks in empty squares***************\n");
     delay(5000);
-    printf("\n **********The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner**********************\n");
+    printf("\n ********* The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner *********\n");
     delay(5000);
-    printf("\n *******************************When all 9 squares are full, the game is over.**********************\n");
+    printf("\n *******************************When all 9 squares are full, the game is over. **********************************\n");
     delay(5000);
     printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
     delay(2000);
@@ -970,27 +972,27 @@ void tic_tac_toe()
 
 //function for escape_the_maze game
 void escape_the_maze()
-{   printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the ESCAPE THE MAZE game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+{   printf("\n ::::::::::::::::::::::::::::::    WELCOME to the ESCAPE THE MAZE game    ::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-    printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\n::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-    printf("\n **********************MISSION - you have to get out of the maze without meeting any enemies*********************************\n");
+    printf("\n *****************MISSION - you have to get out of the maze without meeting any enemies*******************\n");
     delay(2000);
-    printf("\n ************************** -player symbol is 'O' and enemies are 'H' , 'V' , 'J' ***************************\n");
+    printf("\n ************************** -player symbol is 'O' and enemies are 'H' , 'V' , 'J' ************************\n");
     delay(3000);
-    printf("\n *********************-use (d) (a) (w) or (s) to move -  right left up or down respectively**********************\n");
+    printf("\n *******************-use (d) (a) (w) or (s) to move -  right left up or down respectively*******************\n");
     delay(5000);
-    printf("\n **********NOTE : 1. if you hit/meet with enemy , game again starts from starting point in maze**********************\n");
+    printf("\n **********NOTE : 1. if you hit/meet with enemy , game again starts from starting point in maze*************\n");
     delay(5000);
-    printf("\n ******************************* 2. if hp becomes 0 ,you lose the game**********************\n");
+    printf("\n ********************************** 2. if hp becomes 0 ,you lose the game***************************\n");
     delay(5000);
-    printf("\n ********************3. game also shows location and health when required at bottom of maze**********************\n");
+    printf("\n ******************3. game also shows location and health when required at bottom of maze******************\n");
     delay(5000);
     printf("\n *************************-press (d) (a) (w) or (s) and then return to start the game**********************\n");
     delay(5000);
-    printf("\n *******************************-press (q) then return to quit the game**********************\n");
+    printf("\n *******************************-press (q) then return to quit the game***********************************\n");
     delay(5000);
-    printf("\n***************************************    GOOD LUCK!! :)   ***************************************");
+    printf("\n***************************************    GOOD LUCK!! :)   *********************************************");
     delay(2000);
     printf("\n");
 
@@ -1315,9 +1317,13 @@ void player_hit()
 //driver function
 int main()
 {
+    cout<<"\n TECHNOMAKERS presents a bunch of interesting and evergreen Arcade Games. Enjoy the experience!\n\n";
+    delay(4000);
     int choice;
      while(1)
     {
+
+    cout<<"\n\n\n\n\n\n::::::::::  MENU  :::::::::::\n";
 
     cout<<"\nPress 1 for Catch your enemy\n\n";
     cout<<"Press 2 for Escape the maze\n\n";
@@ -1326,6 +1332,7 @@ int main()
     cout<<"Press 5 for sudoku\n\n";
     cout<<"Press 6 for GTC\n\n";
     cout<<"Press 7 for Jumping Jack\n\n";
+    cout<<"Press any other key to EXIT\n\n";
     cout<<"\nEnter your choice\n\n";
 
     cin>>choice;
@@ -1344,7 +1351,14 @@ int main()
     else if(choice==7)
         Jumping_Jack();
     else
+    {
+        cout<<"\n\n '-' '-' '-' '-' '-' '-'  WE HOPE YOU LIKED THE GAMES! '-' '-' '-' '-' '-' '-'\n";
+        cout<<"\n\n '-' '-' '-' '-' '-' '-' '-' THANK YOU FOR PLAYING  '-' '-' '-' '-' '-' '-' '-'\n";
+        cout<<"\n\nP.S: created as a Group project for course CS200 using the benefits of GITHUB by \n\n'TECHNOMAKERS' :\n1.Abdur Rahman Khan\n2.Anupam Kumar\n3.Ruchit Prakash Saxena\n";
+        cout<<"\n2019 Batch CSE \n IIT BHILAI\n\n";
+
         return 0;
+    }
     }
 }
 
