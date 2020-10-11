@@ -3,7 +3,7 @@ This is the Git project for the course STNT-II(CS200) of the group "Technomakers
 
 
 --GOTO Arcade Games folder>>MAIN.CPP
--run the program
+-run the program file main.cpp
 
 
 IN THE PROGRAM-
