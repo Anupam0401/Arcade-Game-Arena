@@ -18,7 +18,7 @@ void player_hit()
     {
         player.posX = 1;
         player.posY =1;
-        player.hp ++;
+        player.hp --;
     }
 
 
