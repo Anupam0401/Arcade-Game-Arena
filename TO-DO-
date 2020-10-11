@@ -49,7 +49,7 @@ In sweep the mine.cpp
     just check for (d)..
     
  In the escape_the_maze.cpp
-     (a) add struct for the player(character)
+     (a) add struct for the player(character).....DONE
      (b) add struct for the enemies 
      (c) add function for when the player hits an enemy 
      (d) error check
