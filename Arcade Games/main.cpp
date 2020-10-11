@@ -488,7 +488,17 @@ void choose_DL ()
 
 
 int SWEEPTHEMINE()
-{ printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
+{// printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
+	printf("Play and Enjoy this game, instructions are same as that of classic Minesweeper game\n");
+ printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the Sweep The Mine game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Minesweeper type Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::choose a box, and it would show the value behind it, if its a mine you loose:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Input should be row number(space) column number ::::::::::::::::::::::::::::::::\n");
     choose_DL ();
     play_SM ();
     return (0);
