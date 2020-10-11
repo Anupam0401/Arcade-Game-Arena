@@ -41,9 +41,9 @@ struct enemies                              // struct for the enemies
 char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
 
 //function prototypes
-void escape_the_maze();          
+void escape_the_maze();
 
-void tic_tac_toe();                
+void tic_tac_toe();
 
 
 int winner();                  //to find who wins the match
@@ -611,15 +611,15 @@ void Jumping_Jack()
 {
     printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the JUMPING JACK game    :::::::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
-    printf("\n -- The doodle is trapped somewhere to the south of the EARTH and is jumping the platforms to reach the Earth --\n");
+    printf("\n ---- JACK is trapped somewhere to the south of the EARTH and is jumping the platforms to reach the Earth ------\n");
     delay(5000);
-    printf("\n:::::::::::::  Help Doodle escape this deadly trap and escort him to EARTH by making correct moves  ::::::::::::\n\n\n");
+    printf("\n:::::::::::::  Help JACK escape this deadly trap and escort him to EARTH by making correct moves  ::::::::::::\n\n\n");
     delay(4000);
     printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
     printf("\n ********************************   Use arrow keys to move left or right   **************************************\n");
     delay(2000);
-    printf("\n *******************   The DOODLE jumps automatically after hitting the green platform   ************************\n");
+    printf("\n *******************   JACK jumps automatically after hitting the green platform   ************************\n");
     delay(3000);
     printf("\n ********************    Keep on jumping over the platforms to gain heights and score points    *****************\n");
     delay(5000);
@@ -878,7 +878,7 @@ int endfunc(int e){
 
 //function for tic_tac_toe game
 void tic_tac_toe()
-{	
+{
     printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the TIC-TAC-TOE game    :::::::::::::::::::::::::::::::::::::\n\n\n");
     delay(3000);
     printf("\n --------------------------------------THIS GAME REQUIRES TWO PLAYERS ------------------------------------------------\n");
@@ -1316,6 +1316,9 @@ void player_hit()
 int main()
 {
     int choice;
+     while(1)
+    {
+
     cout<<"\nPress 1 for Catch your enemy\n\n";
     cout<<"Press 2 for Escape the maze\n\n";
     cout<<"Press 3 for Tic-tac-toe\n\n";
@@ -1324,6 +1327,7 @@ int main()
     cout<<"Press 6 for GTC\n\n";
     cout<<"Press 7 for Jumping Jack\n\n";
     cout<<"\nEnter your choice\n\n";
+
     cin>>choice;
     if(choice==1)
         catch_your_enemy();
@@ -1341,6 +1345,7 @@ int main()
         Jumping_Jack();
     else
         return 0;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------*/
