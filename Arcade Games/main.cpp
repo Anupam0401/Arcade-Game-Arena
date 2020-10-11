@@ -875,41 +875,6 @@ int endfunc(int e){
 
 
 
-/*-------------------------------------------------------------------------------------------------------------------*/
-
-
-//driver function
-int main()
-{
-    int choice;
-    cout<<"\nPress 1 for Catch your enemy\n\n";
-    cout<<"Press 2 for Escape the maze\n\n";
-    cout<<"Press 3 for Tic-tac-toe\n\n";
-    cout<<"Press 4 for sweep the mine\n\n";
-    cout<<"Press 5 for sudoku\n\n";
-    cout<<"Press 6 for GTC\n\n";
-    cout<<"Press 7 for Jumping Jack\n\n";
-    cout<<"\nEnter your choice\n\n";
-    cin>>choice;
-    if(choice==1)
-        catch_your_enemy();
-    else if(choice==2)
-        escape_the_maze();
-    else if(choice==3)
-        tic_tac_toe();
-    else if(choice==4)
-        SWEEPTHEMINE();
-    else if(choice==5)
-        SUDOKU();
-    else if(choice==6)
-        GTC();
-    else if(choice==7)
-        Jumping_Jack();
-    else
-        return 0;
-}
-
-/*------------------------------------------------------------------------------------------------*/
 
 //function for tic_tac_toe game
 void tic_tac_toe()
@@ -931,8 +896,6 @@ void tic_tac_toe()
     printf("\n **********The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner**********************\n");
     delay(5000);
     printf("\n *******************************When all 9 squares are full, the game is over.**********************\n");
-    delay(5000);
-    printf("\n XXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXX\n\n\n");
     delay(5000);
     printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
     delay(2000);
@@ -1011,7 +974,7 @@ void escape_the_maze()
     delay(3000);
     printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
     delay(1500);
-    printf("\n **********************MISSION - you have to get out of the maze without meeting any enemies**************************************\n");
+    printf("\n **********************MISSION - you have to get out of the maze without meeting any enemies*********************************\n");
     delay(2000);
     printf("\n ************************** -player symbol is 'O' and enemies are 'H' , 'V' , 'J' ***************************\n");
     delay(3000);
@@ -1026,8 +989,6 @@ void escape_the_maze()
     printf("\n *************************-press (d) (a) (w) or (s) and then return to start the game**********************\n");
     delay(5000);
     printf("\n *******************************-press (q) then return to quit the game**********************\n");
-    delay(5000);
-    printf("\n XXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXX\n\n\n");
     delay(5000);
     printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
     delay(2000);
@@ -1347,3 +1308,41 @@ void player_hit()
         player.posY =1;
         player.hp --;
     }
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+//driver function
+int main()
+{
+    int choice;
+    cout<<"\nPress 1 for Catch your enemy\n\n";
+    cout<<"Press 2 for Escape the maze\n\n";
+    cout<<"Press 3 for Tic-tac-toe\n\n";
+    cout<<"Press 4 for sweep the mine\n\n";
+    cout<<"Press 5 for sudoku\n\n";
+    cout<<"Press 6 for GTC\n\n";
+    cout<<"Press 7 for Jumping Jack\n\n";
+    cout<<"\nEnter your choice\n\n";
+    cin>>choice;
+    if(choice==1)
+        catch_your_enemy();
+    else if(choice==2)
+        escape_the_maze();
+    else if(choice==3)
+        tic_tac_toe();
+    else if(choice==4)
+        SWEEPTHEMINE();
+    else if(choice==5)
+        SUDOKU();
+    else if(choice==6)
+        GTC();
+    else if(choice==7)
+        Jumping_Jack();
+    else
+        return 0;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
