@@ -517,3 +517,9 @@ int lf (char guess, string sw, string &gw)
 //SUDOKU
 //SWEEPTHEMINE
 //GTC
+int main(){
+GTC();
+SWEEPTHEMINE();
+SUDOKU();
+return 0;
+}
