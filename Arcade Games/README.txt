@@ -20,7 +20,7 @@ In the console, you are given 7 choices of games to be played.
 select game of you choice and ENJOY!!
 
 
-P.S. - IF YOU ARE UNABLE TO COMPILE TO COMPILE THE PROGRAM, Please ensure these prior to running it:
+P.S. - IF YOU ARE UNABLE TO COMPILE THE PROGRAM, Please ensure these prior to running it:
         (1) Your compiler has SFML library installed.
         (2) Your compiler contains graphics.h and windows.h packages.
         
