@@ -23,7 +23,7 @@ int main()
 
         cout << "Player " << player << ", enter a number:  ";
 
-        cin >> choice;                                                  // to choose the gird by respective player 1 & 2
+        cin >> choice;                                                  // to choose the grid by respective player 1 & 2
 
         cin >> choice;                                                  // to choose the grid by respective player 1 & 2
 
