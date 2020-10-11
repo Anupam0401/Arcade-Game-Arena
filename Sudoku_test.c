@@ -1,49 +1,8 @@
-//In Progress
-//read to-do for completing it
-#include <stdio.h>
-#include<stdlib.h>
-#include<time.h>
-
-
-int Sudoku_pass(int a[][9], int b[][9])
-{
-int i,j,k=0,flag=0;
- for(i=0;i<9;i++){
- 	for(j=0;j<9;j++){
- 		if(a[i][j]==0)
- 			k=1;
- 		}
- 	}
- if(k==1){
- 	return 0;
- }
- if(k==0){
- 	for(i=0;i<9;i++){
- 		for(j=0;j<9;j++){
- 			k=a[i][j];
- 			a[i][j]=0;
- 			if(checkSmall(a,i,j,k)==0)
- 				flag=1;
- 			if(check(a,i,j,k)==0)
- 				flag=1;
- 			a[i][j]=k;
- 		}
- 	}
- 	if(flag==0){
- 		printf("You solved!!!\n");
- 		print(a);
- 		return 1;
- 	}
- }
- if(k==0){
- 	printf("Try again\nSolution of this Sudoku is\n\n");
- 	solve(b);
- 	print(b);
- 	return 1;
- 	}
- return 0;
-}
-
+//Completed
+//read to-do 
+#include <cstdio>
+#include<cstdlib>
+#include<ctime>
 int checkSmall(int a[][9],int i,int j, int k)
 {
  i=(i/3)*3;
@@ -58,9 +17,23 @@ int checkSmall(int a[][9],int i,int j, int k)
  	}
  return 1;
 }
-
-
-
+void print(int a[][9]){
+ int i,j;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		printf("%2d ",a[i][j]%10);
+ 		if((j+1)%3==0)
+ 		printf("|");
+ 		}
+ 	if((i+1)%3==0){
+ 		printf("\n");
+ 		for(j=0;j<15;j++)
+ 			printf("_ ");
+ 		printf("\n");
+ 		}
+ 	printf("\n");
+ }
+}
 int check(int a[][9],int i,int j, int k)
 {
  int i1=0,j1=0;
@@ -103,16 +76,55 @@ int solve(int a[][9])
  	}
  return 2;
 }
+int Sudoku_pass(int a[][9], int b[][9])
+{
+int i,j,k=0,flag=0;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		if(a[i][j]==0)
+ 			k=1;
+ 		}
+ 	}
+ if(k==1){
+ 	return 0;
+ }
+ if(k==0){
+ 	for(i=0;i<9;i++){
+ 		for(j=0;j<9;j++){
+ 			k=a[i][j];
+ 			a[i][j]=0;
+ 			if(checkSmall(a,i,j,k)==0)
+ 				flag=1;
+ 			if(check(a,i,j,k)==0)
+ 				flag=1;
+ 			a[i][j]=k;
+ 		}
+ 	}
+ 	if(flag==0){
+ 		printf("You solved!!!\n");
+ 		print(a);
+ 		return 1;
+ 	}
+ }
+ if(k==0){
+ 	printf("Try again\nSolution of this Sudoku is\n\n");
+ 	solve(b);
+ 	print(b);
+ 	return 1;
+ 	}
+ return 0;
+}
+
 
 void sudoku(int a[][9],int n)
 {
 printf("Sudoku_created\n");
 	int i,b,c,d;
  srand(time(0));
- 	if(n==1)n=40;
+ 	if(n==1)n=61;
  	else if(n==2) n=55;
- 	else n=61;
-   for( i = 0 ; i < 9000000 ; i++ ) {
+ 	else n=40;
+   for( i = 0 ; i < n ; i++ ) {
    	b=rand()%9;
    	c=rand()%9;
    	d=(rand()%9)+1;
