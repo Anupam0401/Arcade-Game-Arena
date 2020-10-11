@@ -15,8 +15,8 @@ In Catch Your Enemy.cpp
     
 In GTC country
     a)ADD country names in wrods[] string....DONE
-    b)Add letter_find function .....DONE
-    c)Play the game and report if any bug found
+    b)Add letter_find function .....DONE.
+    c)Play the game and report if any bug found..... DONE
 
 
     (b) Add endfunction() to endfunc() branch ,to terminate and display the scoreDOONE
