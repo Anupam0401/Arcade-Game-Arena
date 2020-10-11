@@ -5,14 +5,21 @@
 
 using namespace std;
 
-// struct for the player(character) here
+struct character                                  
+
+    {
+        int posX ;
+        int posY ;
+        char symbol;
+        int hp;
+    }player;
 
 
 
  // struct for the enemies here    
 struct enemies{
  
-};
+}
 
 
 // function for when the player hits an enemy here
