@@ -519,8 +519,21 @@ int  GTC()
 	for(i = 0; i <=word.length(); i++)
   word[i] = tolower(word[i]);
 
-	string unknown(word.length(),'*');
-	cout << "\n\nWelcome to GTC...\nGUESS THE COUNTRY\n ";
+	string unknown(word.length(),'*');printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to GUESS THE COUNTRYgame    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Guessing Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::You have to Guess the name of Country:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::Each letter is represented by a *.:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::You have to type only one letter in one try ::::::::::::::::::::::::::::::::\n");
+	 delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::If your guess is correct * will get replaced by your Guessed letter.:::::::::::::::::::::::::::::::::::\n");
+ delay(1500);
+	printf("\n::::::::::::::::::::::::::::::::Else if your guess is wrong, your guess count will be decreased.:::::::::::::::::::::::::::::::::::\n");
 	cout << "\n\nEach letter is represented by a *.";
 	cout << "\n\nYou have to type only one letter in one try, only if guess is wrong your guess count will decrease ";
 	 maxt=6;
