@@ -224,6 +224,18 @@ void playsudoku(int a[][9], int b[][9])
 int SUDOKU()
 {
  int n,i,j,num,k,a[9][9]={0},b[9][9];
+	printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the SUDOKU game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n ::::::::::::::::::::::::::::::::::    It is classic Sudoku Game   :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n::::::::::::::::::::::::::::::::Fill each and every box with number in between 1 to 9:::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Replace each 0 in matrix with another number ::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+printf("\n:::::::::::::::::::::::::::::::Input should be like row number( space) column number (space) NUMBER (to input) ::::::::::::::::::::::::\n");
+    delay(1500);
  printf("Enter \n1 for Beginner Level \nor\n 2 for Intermediate level\nor\n 3 for Advanced Level\n");
  scanf("%d",&n);
 /* for(k=0;k<n;k++){scanf("%d %d",&i,&j);scanf("%d",&a[i-1][j-1]);}*/
