@@ -1,4 +1,4 @@
-2 OCt- 9:43 PM
+11 OCt- 00:35 
 In Sudoku_test.c
     a)  ADD solve(), function for solving given Sudoku ....DONE
     b)  ADD print(), function for printing given sudoku array from 2-D array ...DONE
@@ -8,10 +8,59 @@ In Sudoku_test.c
     
 In Catch Your Enemy.cpp
     (a) Add switch case condition for setting the directions.-DONE
+
     (b) Add endfunction() to terminate and display the score -DONE
+
     (c) Run it and spot out errors if any.....RUNNING GOOD
     
 In GTC country
     a)ADD country names in wrods[] string....DONE
     b)Add letter_find function
     c)Play the game and report if any bug found
+
+
+    (b) Add endfunction() to endfunc() branch ,to terminate and display the scoreDOONE
+    All done . Good to go.
+    
+    
+In GTC_country.cpp
+    ALL DONE
+    just check by playing it
+    
+In TIC_TAC_TOE.cpp
+    a)  ADD board(), function to create tic-tac-toe virtual board...DONE
+    
+
+    b)  ADD winner(), function to check the winner conditionalities....DONE
+    ALL DONE.
+    ready to be played.
+    
+In Sweep_the_mine.cpp
+    a)Add function for choosing difficulty-DONE
+    b)Add utility for printing board-DONE
+    c)Add initialise function for intialising the mines-DONE
+   
+ In Doodle_jump.cpp
+    (a) Add delay() -DONE
+    (b) Add gameover:   (DONE)
+    (c) Check for errors 
+    P.S. - This is a SFML project so, your compiler must have this installed to run this program else, use Online Compiler.
+
+    
+In sweep the mine.cpp
+    (a) ADD #define variables-DONE
+    (b) ADD initialise() function-DONE
+    (c) ADD choose_DL() function-DONE
+    (d) Check for errors
+    
+    ALL DONE.
+    just check for (d)..
+    
+ In the escape_the_maze.cpp
+     (a) add struct for the player(character).....DONE
+     (b) add struct for the enemies ....DONE
+     (c) add function for when the player hits an enemy -DONE
+     (d) error check
+     
+     ALL DONE
+

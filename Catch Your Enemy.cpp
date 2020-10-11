@@ -65,9 +65,10 @@ for(;;){
    else{d=0;}
     int n;
 
+
 //switch case conditions here.
- switch(d)
- {
+switch(d)
+{
     case 0:
       if(dir==1){x=x+10;}
       else if(dir==2){x=x-10;}
@@ -100,6 +101,7 @@ if(x>=640 || x<=0|| y<=0 || y>=480){
     break;
 }
 }
+
 }
 //Add endfunction() here. DONE
 int endfunc(int e){
@@ -112,3 +114,7 @@ int endfunc(int e){
     printf("Your score is : %d\n", e);
     getch();
 }
+} 
+
+
+
