@@ -1,6 +1,6 @@
 # Arcade-Game-Arena
 This is the Git project for the course STNT-II(CS200) of the group "Technomakers".
-
+This is Game_pack consisting of many games inside one file to play for refreshment.
 
 --GOTO Arcade Games folder>>MAIN.CPP
 -run the program
@@ -9,6 +9,7 @@ This is the Git project for the course STNT-II(CS200) of the group "Technomakers
 IN THE PROGRAM-
 In the console, you are given 7 choices of games to be played.
 
+You have to press,
 1 for Catch your enemy
 2 for Escape the maze
 3 for Tic-tac-toe
@@ -16,7 +17,9 @@ In the console, you are given 7 choices of games to be played.
 5 for sudoku
 6 for GTC
 7 for Jumping Jack
+to play, Enter any other number to exit the menu.
 
+Instructions are given inside the respective games.
 select game of you choice and ENJOY!!
 
 
