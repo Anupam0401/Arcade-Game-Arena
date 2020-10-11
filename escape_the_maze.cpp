@@ -14,7 +14,12 @@ using namespace std;
 
 
 // function for when the player hits an enemy here
-
+void player_hit()
+    {
+        player.posX = 1;
+        player.posY =1;
+        player.hp ++;
+    }
 
 
 int main ()
