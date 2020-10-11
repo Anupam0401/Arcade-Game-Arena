@@ -878,7 +878,30 @@ int main()
 
 //function for tic_tac_toe game
 void tic_tac_toe()
-{
+{	
+    printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the TIC-TAC-TOE game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+    printf("\n --------------------------------------THIS GAME REQUIRES TWO PLAYERS ------------------------------------------------\n");
+    delay(5000);
+    printf("\n::::::::::::::::::::::::::::::::::::::::player 1 (X) V/S player 2 (O)::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(4000);
+    printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+    printf("\n ***************************Use grid numbers 1 to 9 for selecting the respective grid**************************************\n");
+    delay(2000);
+    printf("\n ************************** The game is played on a grid that's 3 squares by 3 squares ***************************\n");
+    delay(3000);
+    printf("\n **************You are X, your friend is O. Players take turns putting their marks in empty squares**********************\n");
+    delay(5000);
+    printf("\n **********The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner**********************\n");
+    delay(5000);
+    printf("\n *******************************When all 9 squares are full, the game is over.**********************\n");
+    delay(5000);
+    printf("\n XXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXX\n\n\n");
+    delay(5000);
+    printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
+    delay(2000);
+    printf("\n");
 	int player = 1,i,choice;
 
     char mark;
@@ -949,7 +972,31 @@ void tic_tac_toe()
 
 //function for escape_the_maze game
 void escape_the_maze()
-{
+{   printf("\n ::::::::::::::::::::::::::::::::::    WELCOME to the ESCAPE THE MAZE game    :::::::::::::::::::::::::::::::::::::\n\n\n");
+    delay(3000);
+    printf("\n::::::::::::::::::::::::::::::::::::::::::::::  INSTRUCTIONS  ::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    delay(1500);
+    printf("\n **********************MISSION - you have to get out of the maze without meeting any enemies**************************************\n");
+    delay(2000);
+    printf("\n ************************** -player symbol is 'O' and enemies are 'H' , 'V' , 'J' ***************************\n");
+    delay(3000);
+    printf("\n *********************-use (d) (a) (w) or (s) to move -  right left up or down respectively**********************\n");
+    delay(5000);
+    printf("\n **********NOTE : 1. if you hit/meet with enemy , game again starts from starting point in maze**********************\n");
+    delay(5000);
+    printf("\n ******************************* 2. if hp becomes 0 ,you lose the game**********************\n");
+    delay(5000);
+    printf("\n ********************3. game also shows location and health when required at bottom of maze**********************\n");
+    delay(5000);
+    printf("\n *************************-press (d) (a) (w) or (s) and then return to start the game**********************\n");
+    delay(5000);
+    printf("\n *******************************-press (q) then return to quit the game**********************\n");
+    delay(5000);
+    printf("\n XXXXXXX   WARNING : Don't miss a platform else you fall into the infinite space and get trapped there    XXXXXXX\n\n\n");
+    delay(5000);
+    printf("\n***************************************   GET READY.......LET'S BEGIN :)   ***************************************");
+    delay(2000);
+    printf("\n");
 
     enemies enemy_horizontal = {13, 9, 'H'}; //placing enemy_horizontal at location [9][13] and gives it the sign H
     enemies enemy_vertical = { 11 , 9, 'V'};
@@ -988,14 +1035,7 @@ void escape_the_maze()
         '#','#','#',' ',' ',' ',' ','#','#',' ',' ',' ','#','#','#',' ','#','#',
         '#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',
     };
-    cout << "MISSION - you have to get out of the maze without meeting any enemies\n\n";
-    cout << "Instructions :\n";
-    cout << "-player symbol is 'O'\n and enemies are 'H' , 'V' , 'J'\n ";
-    cout << "-use (d) (a) (w) or (s) to move -  right left up or down respectively\n\n";
 
-    cout << "NOTE : 1. if you hit/meet with enemy , game again starts from starting point in maze\n\n 2. if hp becomes 0 ,you lose the game\n\n 3. game also shows location and health when required at bottom of maze\n\n";
-    cout << "-press (d) (a) (w) or (s) and then return to start the game\n";
-    cout << "-press (q) then return to quit the game\n\n";
     cout << "GOOD LUCK\n";
 
 
