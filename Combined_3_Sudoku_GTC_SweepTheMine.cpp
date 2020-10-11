@@ -435,8 +435,7 @@ int SWEEPTHEMINE()
     play_SM (); 
     return (0); 
 }
-rn mt;
-}
+
 int maxt=20;
 int lf (char, string, string&);
 int  GTC()
@@ -512,7 +511,8 @@ int lf (char guess, string sw, string &gw)
 			mt++;
 		}
 	}
-	retu
+	return mt;
+}
 //functions TO CALL TO PLAY GAMES NAME
 //SUDOKU
 //SWEEPTHEMINE
