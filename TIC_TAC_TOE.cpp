@@ -25,8 +25,6 @@ int main()
 
         cin >> choice;                                                  // to choose the grid by respective player 1 & 2
 
-        cin >> choice;                                                  // to choose the grid by respective player 1 & 2
-
 
         mark=(player == 1) ? 'X' : 'O';
 
