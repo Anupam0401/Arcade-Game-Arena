@@ -1,5 +1,7 @@
 # Arcade-Game-Arena
 This is the Git project for the course STNT-II(CS200) of the group "Technomakers".
+ Abdur-Rahman-Khan-patch-1
+=======
 This is Game_pack consisting of many games inside one file to play for refreshment.
 
 --GOTO Arcade Games folder>>MAIN.CPP
@@ -28,3 +30,4 @@ P.S. - IF YOU ARE UNABLE TO COMPILE THE PROGRAM, Please ensure these prior to ru
         (2) Your compiler contains graphics.h and windows.h packages.
         
         Once you install the requirements, you are can run the Program and enjoy the experience.
+ main
