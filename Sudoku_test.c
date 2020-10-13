@@ -1,9 +1,84 @@
-//In Progress
-//read to-do for completing it
-#include <stdio.h>
-#include<stdlib.h>
-#include<time.h>
+//Completed
+//read to-do 
+#include<iostream.h>
+#include <cstdio>
+#include<cstdlib>
+#include<ctime>
+int checkSmall(int a[][9],int i,int j, int k)
+{
+ i=(i/3)*3;
+ j=(j/3)*3;
+ int i1=i,j1=j;
+ for(i=i1;i<(i1+3);i++){
+ 	for(j=j1;j<(j1+3);j++){
+ 		if(k==a[i][j]){
+ 			return 0;
+ 			}
+ 		}
+ 	}
+ return 1;
+}
+void print(int a[][9]){
+ int i,j;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		printf("%2d ",a[i][j]%10);
+ 		if((j+1)%3==0)
+ 		printf("|");
+ 		}
+ 	if((i+1)%3==0){
+ 		printf("\n");
+ 		for(j=0;j<15;j++)
+ 			printf("_ ");
+ 		printf("\n");
+ 		}
+ 	printf("\n");
+ }
+}
+int check(int a[][9],int i,int j, int k)
+{
+ int i1=0,j1=0;
+ for(;i1<9;i1++){
+ 	if(k==a[i1][j])
+ 		return 0;
+ 	}
+ for(;j1<9;j1++){
+ 	if(k==a[i][j1])
+ 		return 0;
+ 	}
+ return 1;
+}
 
+
+
+int solve(int a[][9])
+{
+ int i,j,k;
+ for(i=0;i<9;i++){
+ 	for(j=0;j<9;j++){
+ 		if(i==8&&j==8&&a[i][j]!=0){
+ 			return 1;
+ 			print(a);
+ 		}
+ 		if(a[i][j]!=0)
+ 			continue;
+ 		for(k=1;k<=10;k++){
+ 			if(k==10)
+ 				{a[i][j]=0;
+ 				 return -1;
+ 				}
+ 			if(checkSmall(a,i,j,k)==0)
+ 				continue;
+ 			if(check(a,i,j,k)==0)
+ 				continue;
+ 			a[i][j]=k;
+ 			if(solve(a)==1)
+ 				return 1;
+ 			}
+ 		}
+ 	}
+ return 2;
+}
 
 int Sudoku_pass(int a[][9], int b[][9])
 {
@@ -105,15 +180,17 @@ int solve(int a[][9])
 }
 
 
+
+
 void sudoku(int a[][9],int n)
 {
 printf("Sudoku_created\n");
 	int i,b,c,d;
  srand(time(0));
- 	if(n==1)n=40;
+ 	if(n==1)n=61;
  	else if(n==2) n=55;
- 	else n=61;
-   for( i = 0 ; i < 9000000 ; i++ ) {
+ 	else n=40;
+   for( i = 0 ; i < n ; i++ ) {
    	b=rand()%9;
    	c=rand()%9;
    	d=(rand()%9)+1;
