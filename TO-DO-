@@ -1,3 +1,12 @@
+
+2 OCT- 23:34
+In Sudoku_test.c
+    a)  ADD solve(), function for solving given Sudoku
+    b)  ADD print(), function for printing given sudoku array from 2-D array
+    c)  ADD checkSmall() and check(), functions for checking correctness of intermediate solution of Sudoku
+    ALL DONE
+    checking its correctness....
+=======
 11 OCt- 00:35 
 In Sudoku_test.c
     a)  ADD solve(), function for solving given Sudoku ....DONE
@@ -66,4 +75,5 @@ In sweep the mine.cpp
      ready to be played.
      
      All games checked & ready to be played!!
+
 
