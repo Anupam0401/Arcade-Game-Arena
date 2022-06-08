@@ -3,7 +3,7 @@ This is the Git project for the course STNT-II(CS200) of the group "Technomakers
 
 - This is a Game collection consisting of many games inside one file to play for refreshment.
 
-- GOTO Arcade Games folder > MAIN.CPP
+- Goto Arcade Games folder -> main.cpp
 - run the program
 
 
@@ -29,8 +29,8 @@ select a game of your choice and ENJOY!!
 
 P.S. - IF YOU ARE UNABLE TO COMPILE THE PROGRAM, Please ensure these prior to running it:
 ```
-- Your compiler has the SFML library installed.
-- Your compiler contains graphics.h and windows.h packages.
+1. Your compiler has the SFML library installed.
+2. Your compiler contains graphics.h and windows.h packages.
 ```
 **Once you install the requirements, you can run the Program and enjoy the experience.**
 
