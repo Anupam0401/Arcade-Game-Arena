@@ -8,9 +8,10 @@ This is the Git project for the course STNT-II(CS200) of the group "Technomakers
 
 
 - IN THE PROGRAM-
- - On the console, you are given 7 choices of games to be played.
+- On the console, you are given 7 choices of games to be played.
 
-You have to press,
+Overview -
+You have to press :
 ```
 1. for Catch your enemy
 2. for Escape the maze
@@ -20,11 +21,11 @@ You have to press,
 6. for GTC
 7. for Jumping Jack
 ```
-to play, 
+To play :
 - Enter any other number to exit the menu.
 
 Instructions are given inside the respective games.
-select a game of your choice and ENJOY!!
+Select a game of your choice and ENJOY!!
 
 
 P.S. - IF YOU ARE UNABLE TO COMPILE THE PROGRAM, Please ensure these prior to running it:
